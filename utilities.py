@@ -7,7 +7,6 @@ def tokenize_fn(examples,tokenizer, max_length):
     for i in range(len(examples["question"])):
         text = examples["question"][i] + examples["answer"][i]
         texts.append(text)
-    print(texts)
     
     tokenized_inputs = tokenizer(
         texts,
